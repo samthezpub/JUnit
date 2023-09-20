@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.Figures.Circle;
+import org.example.Figures.Triangle;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -35,6 +36,25 @@ public class AppTest {
         double expected = 2 * Math.PI * 10;
 
         assertEquals(expected, circle.getPerimeter());
+    }
+
+    @Test
+    public void Triangle_calculateSquare_MustReturnSquareTypoDoubleWhenCalled() {
+        Triangle triangle = new Triangle(10,12);
+        triangle.calculateSquare();
+
+        double expected = (double) (10 * 12) /2;
+
+        assertEquals(expected, triangle.getSquare());
+    }
+    @Test
+    public void Triangle_calculatePerimeter_MustReturnSquareTypoDoubleWhenCalled() {
+        Triangle triangle = new Triangle(10,12);
+        triangle.calculatePerimeter();
+
+        double expected = 10 * 2 + 12;
+
+        assertEquals(expected, triangle.getPerimeter());
     }
 
 }
