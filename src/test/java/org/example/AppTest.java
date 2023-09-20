@@ -31,7 +31,7 @@ public class AppTest {
     }
 
     @Test
-    public void Circle_calculatePerimeter_MustReturnSquareTypoDoubleWhenCalled() {
+    public void Circle_calculatePerimeter_MustReturnPerimeterTypoDoubleWhenCalled() {
         Circle circle = new Circle(10);
         circle.calculatePerimeter();
 
@@ -50,7 +50,7 @@ public class AppTest {
         assertEquals(expected, triangle.getSquare());
     }
     @Test
-    public void Triangle_calculatePerimeter_MustReturnSquareTypoDoubleWhenCalled() {
+    public void Triangle_calculatePerimeter_MustReturnPerimeterTypoDoubleWhenCalled() {
         Triangle triangle = new Triangle(10,12);
         triangle.calculatePerimeter();
 
@@ -69,7 +69,7 @@ public class AppTest {
         assertEquals(expected, rectangle.getSquare());
     }
     @Test
-    public void Rectangle_calculatePerimeter_MustReturnSquareTypoDoubleWhenCalled() {
+    public void Rectangle_calculatePerimeter_MustReturnPerimeterTypoDoubleWhenCalled() {
         Rectangle rectangle = new Rectangle(10,12);
         rectangle.calculatePerimeter();
 
@@ -88,7 +88,7 @@ public class AppTest {
         assertEquals(expected, rhomb.getSquare());
     }
     @Test
-    public void Rhomb_calculatePerimeter_MustReturnSquareTypoDoubleWhenCalled() {
+    public void Rhomb_calculatePerimeter_MustReturnSquareTypoPerimeterWhenCalled() {
         Rhomb rhomb = new Rhomb(10,12);
         rhomb.calculatePerimeter();
 
